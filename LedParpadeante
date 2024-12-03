@@ -1,0 +1,20 @@
+void setup() {
+  //Se ejecuta una sola vez
+
+  pinMode(13,OUTPUT); //Declaramos el pin 13 como salida
+  pinMode(2,OUTPUT); //Declaramos el pin 13 como salida 
+
+}
+
+void loop() {
+  //Se ejecuta varias veces
+
+  digitalWrite (2, HIGH); //Encendemos el led
+  digitalWrite (13, HIGH); //Encendemos el led
+  delay(2000); //esperamos un 2 seg
+
+  digitalWrite(2,LOW); //Apagamos el led
+  digitalWrite(13, LOW); //encendemos el led
+  delay(1000); //esperamos 1 seg
+
+}
