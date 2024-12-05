@@ -1,0 +1,28 @@
+const int ledPin = 13;
+const int fotoRPin = A1;
+
+int estadoFotoR =0;
+int sensorValor =0;
+
+void setup() {
+
+pinMode(ledPin, OUTPUT);
+
+Serial.begin (9600);
+
+}
+
+void loop() {
+
+estadoFotoR = analogRead(fotoRPin);
+
+digitalWrite(ledPin, HIGH);
+delay(estadoFotoR);
+
+digitalWrite(ledPin, LOW);
+delay (estadoFotoR);
+
+sensorValor = analogRead (fotoRPin);
+Serial.println(sensorValor);
+
+}
